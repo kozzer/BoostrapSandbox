@@ -1,0 +1,26 @@
+.koz-content-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.koz-content {
+    position: static;
+}
+
+
+
+@media only screen and (min-width: 576px) {
+    .koz-content-container {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        height:300px;
+    }
+
+    .koz-content {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+}
