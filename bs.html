@@ -14,11 +14,11 @@
     </head>
     <body>
 
-        <!-- MAIN NAV -->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">WebKozzer</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav">
+        <!-- Header Site Nav Bar -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning bg-gradient">
+            <div class="container-fluid text-body">
+                <a href="#" class="navbar-brand my-auto"><span class="large fs-1 pe-1 my-auto">W</span>WebKozzer</a>
+                <button class="navbar-toggler my-auto" data-bs-toggle="collapse" data-bs-target="#main-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main-nav">
@@ -43,11 +43,40 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-5 col-md-4 bg-light border border-primary p-2 fw-bold">
-                    Page Sidebar
+
+
+                <div class="col-12 col-sm-5 col-md-4 col-lg-3 bg-light border border-primary p-2">
+                    <div class="container-fluid p-0">
+
+                        <!-- Sidebar header -->
+                        <div class="justify-content-between">
+                            <div class="d-inline fw-bold bg-light">Page Sidebar</div>   
+                            <div class="d-inline d-sm-none float-end pe-1">
+                                <button class="border-2 border-light rounded ms-auto" id="sidebar-toggler" data-bs-toggle="collapse" data-bs-target="#sidebar-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>                                   
+                            </div>    
+                        </div>
+                        
+                        <!-- Sidebar content -->
+                        <div class="collapse" id="sidebar-content">
+                            <ul class="list-unstyled ps-2 pt-1">
+                                <li>Sub item 1</li>
+                                <li>Sub item 2</li>
+                                <li>Sub item 3</li>
+                            </ul>                            
+                        </div>  
+
+                    </div>
+
                 </div>
-                <div class="col-12 col-sm-7 col-md-8 bg-secondary text-white koz-content-container">
- 
+
+                <!-- Content Container -->
+                <div class="col-12 col-sm-7 col-md-8 col-lg-9 bg-secondary text-white koz-content-container">
+                    
+                    <!-- Content Div -->
                     <div class="koz-content">
                         Page Content
                     </div>
@@ -56,7 +85,9 @@
             </div>
         </div>
 
-        <div class="footer"></div>
+
+        <!-- Footer -->
+        <div class="fixed-bottom text-center border-top border-dark py-2 small bg-warning bg-gradient">YO, I'M A FOOTER</div>
 
 
         <!-- Bootstrap 5 Bundle with Popper -->
