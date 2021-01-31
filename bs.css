@@ -3,7 +3,7 @@
     background: linear-gradient(90deg, rgba(255,193,7,1) 16%, rgba(255,193,7,1) 43%, rgba(215,167,26,1) 50%, rgba(195,154,36,1) 54%, rgba(161,133,52,1) 59%, rgba(140,120,62,1) 61%, rgba(56,56,56,1) 69%);
 }
 
-.koz-navbar > div > div > ul > li > a {
+.koz-navbar a {
     color: #222222 !important;
 }
 
@@ -44,7 +44,7 @@
 
 /* sm */
 @media only screen and (min-width: 576px) {
-    .koz-navbar > div > div > ul > li > a {
+    .koz-navbar a {
         color: #DDDDDD !important;
     }
 
