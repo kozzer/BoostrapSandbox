@@ -1,15 +1,53 @@
+.koz-navbar {
+    background: rgb(255,193,7);
+    background: linear-gradient(90deg, rgba(255,193,7,1) 16%, rgba(255,193,7,1) 43%, rgba(215,167,26,1) 50%, rgba(195,154,36,1) 54%, rgba(161,133,52,1) 59%, rgba(140,120,62,1) 61%, rgba(56,56,56,1) 69%);
+}
+
+.koz-navbar > div > div > ul > li > a {
+    color: #222222 !important;
+}
+
 .koz-content-container {
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
+
+    /* https://cssgradient.io/ */
+    background: linear-gradient(220deg, #edd911, #61dc50, #5094dc, #8750dc, #eb0c7c);
+    background-size: 1000% 1000%;
+
+    /* https://www.gradient-animator.com/ */
+    -webkit-animation: koz-content-animation 16s ease infinite;
+    -moz-animation:    koz-content-animation 16s ease infinite;
+    animation:         koz-content-animation 16s ease infinite;
+}
+
+@-webkit-keyframes koz-content-animation {
+    0%{background-position:46% 0%}
+    50%{background-position:55% 100%}
+    100%{background-position:46% 0%}
+}
+@-moz-keyframes koz-content-animation {
+    0%{background-position:46% 0%}
+    50%{background-position:55% 100%}
+    100%{background-position:46% 0%}
+}
+@keyframes koz-content-animation {
+    0%{background-position:46% 0%}
+    50%{background-position:55% 100%}
+    100%{background-position:46% 0%}
 }
 
 .koz-content {
     position: static;
 }
 
-
+/* sm */
 @media only screen and (min-width: 576px) {
+    .koz-navbar > div > div > ul > li > a {
+        color: #DDDDDD !important;
+    }
+
     .koz-content-container {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
