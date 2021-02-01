@@ -3,17 +3,30 @@
     background: linear-gradient(90deg, rgba(255,193,7,1) 16%, rgba(255,193,7,1) 43%, rgba(215,167,26,1) 50%, rgba(195,154,36,1) 54%, rgba(161,133,52,1) 59%, rgba(140,120,62,1) 61%, rgba(56,56,56,1) 69%);
 }
 
-.koz-navbar a {
+.koz-navbar a, #koz-brand {
     color: #222222 !important;
 }
 
-.koz-content-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    position: relative;
+.koz-sidebar a {
+    display:         block;
+    padding:         0.25rem 1rem;
+    text-decoration: none;
+    color:         black;
+    transition:      all 0.1s linear;
+}
+.koz-sidebar a:hover {
+    color:      #EFEFEF;
+    background: var(--bs-primary);      /* uses Bootstrap theme color via var() */
+}
 
-    /* https://cssgradient.io/ */
-    background: linear-gradient(220deg, #edd911, #61dc50, #5094dc, #8750dc, #eb0c7c);
+.koz-content-container {
+    padding-top:    2rem;
+    padding-bottom: 2rem;
+    position:       relative;
+
+    /* https://cssgradient.io/ 
+        -- This gradient uses Bootstrap default theme colors via the var() method */
+    background:      linear-gradient(220deg, var(--bs-primary), var(--bs-primary), var(--bs-info), var(--bs-success), var(--bs-warning), var(--bs-danger), var(--bs-purple), var(--bs-purple));
     background-size: 1000% 1000%;
 
     /* https://www.gradient-animator.com/ */
@@ -22,20 +35,20 @@
     animation:         koz-content-animation 16s ease infinite;
 }
 
-@-webkit-keyframes koz-content-animation {
-    0%{background-position:46% 0%}
-    50%{background-position:55% 100%}
-    100%{background-position:46% 0%}
+@-webkit-keyframes koz-content-animation    {
+    0%   { background-position:46% 0%   }
+    50%  { background-position:55% 100% }
+    100% { background-position:46% 0%   }
 }
-@-moz-keyframes koz-content-animation {
-    0%{background-position:46% 0%}
-    50%{background-position:55% 100%}
-    100%{background-position:46% 0%}
+@-moz-keyframes koz-content-animation       {
+    0%   { background-position:46% 0%   }
+    50%  { background-position:55% 100% }
+    100% { background-position:46% 0%   }
 }
-@keyframes koz-content-animation {
-    0%{background-position:46% 0%}
-    50%{background-position:55% 100%}
-    100%{background-position:46% 0%}
+@keyframes koz-content-animation            {
+    0%   { background-position:46% 0%   }
+    50%  { background-position:55% 100% }
+    100% { background-position:46% 0%   }
 }
 
 .koz-content {
@@ -49,16 +62,17 @@
     }
 
     .koz-content-container {
-        padding-top: 0.5rem;
+        padding-top:    0.5rem;
         padding-bottom: 0.5rem;
-        height:300px;
+        height:         400px;
     }
 
+    /* Centers content within div with position:relative */
     .koz-content {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 50%;
+        position:   absolute;
+        transform:  translate(-50%, -50%);
+        left:       50%;
+        top:        50%;
     }
 
     #sidebar-content {
