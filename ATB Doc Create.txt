@@ -1,0 +1,21 @@
+doc queue hover:
+----------------
+open view 
+open edit 
+
+remove from queue (make draft)
+delete
+
+
+
+doc right-click:
+----------------
+reset changes 
+close without saving 
+
+save 
+save and close
+
+apply signature 
+
+

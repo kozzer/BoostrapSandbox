@@ -27,7 +27,7 @@
     /* https://cssgradient.io/ 
         -- This gradient uses Bootstrap default theme colors via the var() method */
     background:      linear-gradient(220deg, var(--bs-primary), var(--bs-primary), var(--bs-info), var(--bs-success), var(--bs-warning), var(--bs-danger), var(--bs-purple), var(--bs-purple));
-    background-size: 1000% 1000%;
+    background-size: 600% 600%;
 
     /* https://www.gradient-animator.com/ */
     -webkit-animation: koz-content-animation 16s ease infinite;
