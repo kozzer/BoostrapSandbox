@@ -19,3 +19,13 @@ save and close
 apply signature 
 
 
+
+Changes:
+---------
+* Shorter time for case info tool tip 
+* remove doc tools bar and replace with hover/context menus above
+    --> use small icons for these options?
+* Users can apply canned signature
+* Finish Court Forms 
+* Display other users' notes
+
