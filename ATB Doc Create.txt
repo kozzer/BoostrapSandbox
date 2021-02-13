@@ -3,7 +3,7 @@ doc queue hover:
 open view 
 open edit 
 
-remove from queue (make draft)
+remove from queue (make draft, remove any applied signatures)
 delete
 
 
@@ -17,15 +17,23 @@ save
 save and close
 
 apply signature 
+create signature        // manual signing
 
 
 
-Changes:
+Working On:     Users can apply canned signature
+
+
+Tasks:
 ---------
-* Shorter time for case info tool tip 
+* Add Defendant column to Home screen grid
+* Shorter time for case info tool tip + all animations
 * remove doc tools bar and replace with hover/context menus above
     --> use small icons for these options?
-* Users can apply canned signature
 * Finish Court Forms 
 * Display other users' notes
+* collapseable left nav menu, fade/slide transitions?
+* fix manual signature sizing issue
+* page image preview loading animation
+* optimize onbase page retrieval
 
