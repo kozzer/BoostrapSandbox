@@ -10,10 +10,12 @@ delete
 
 Tasks:
 ---------
+* Home Screen: Title icon/logo fade in, app title slide in, moving gradient underneath, fade in date
 * Finish Court Forms 
 * Display other users' notes
 * collapseable left nav menu
 * fix signature sizing =+ position issues
+* signature transparency
 * page image preview loading animation while waiting for API to come back
 * optimize onbase page retrieval
 
