@@ -8,20 +8,12 @@ delete
 
 
 
-
-Working On:     Users can apply canned signature
-
-
 Tasks:
 ---------
-* Shorter time for case info tool tip + all animations
-* remove doc tools bar and replace with hover/context menus above
-    --> use small icons for these options?
 * Finish Court Forms 
 * Display other users' notes
 * collapseable left nav menu
-* fade/slide transitions?
-* fix manual signature sizing issue
+* fix signature sizing =+ position issues
 * page image preview loading animation while waiting for API to come back
 * optimize onbase page retrieval
 
